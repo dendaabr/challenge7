@@ -1,0 +1,20 @@
+<nav>
+    <span id="logo">LOGO</span>
+    <div class="menu">
+        <span>HOME</span>
+        <span>WORK</span>
+        <span>CONTACT</span>
+        <span>ABOUT ME</span>
+    </div>
+    <div class="signuplogin">
+        <% if (typeof username != 'undefined') { %>
+            Hello, <%= username %>
+            <a href="/logout"><span>LOGOUT</span></a>
+        <% } else { %>
+            <a href="/signup"><span>SIGN UP</span></a>
+            <a href="/login"><span>LOGIN</span></a>
+        <%  } %>
+    </div>
+
+</nav>
+<main>

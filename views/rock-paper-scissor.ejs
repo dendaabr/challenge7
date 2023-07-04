@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Challenge 4</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/stylesuit.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/assets/logo 1.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="/" class="gotoback"> &lt; <img class="logo" src="/assets/logo 1.png"> </a>
+        </div>
+        <h3>ROCK PAPER SCISSORS</h3>
+    </header>
+    <div class="gamesuit">
+        <div class="boxoption">
+            <h3>
+                <%= username %>
+            </h3>
+
+            <script>
+                var user_id = "<%= user_id %>";       
+            </script>
+            <button class="hand" id="player_rock" onclick="optionPick ('rock', user_id)"><img class="choice"
+                    src="/assets/batu.png"></button>
+            <button class="hand" id="player_scissors" onclick="optionPick ('scissors', user_id)"><img class="choice"
+                    src="/assets/gunting.png"></button>
+            <button class="hand" id="player_paper" onclick="optionPick ('paper', user_id)"><img class="choice"
+                    src="/assets/kertas.png"></button>
+        </div>
+        <div class="cont" id="outgame">
+            VS
+        </div>
+        <div class="boxoption">
+            <h3>Computer</h3>
+            <button class="hand" id="computer_rock"><img class="choice" src="/assets/batu.png"></button>
+            <button class="hand" id="computer_scissors"><img class="choice" src="/assets/gunting.png"></button>
+            <button class="hand" id="computer_paper"><img class="choice" src="/assets/kertas.png"></button>
+        </div>
+    </div>
+    <div>
+        <button type="reset" class="hand" onclick="reload()"><img src="/assets/refresh.png"></button>
+    </div>
+
+</body>
+<script src="/main.js"></script>
+
+</html>

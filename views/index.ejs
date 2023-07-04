@@ -1,0 +1,177 @@
+<%- include('./partials/head'); %>
+    <%- include('./partials/header'); %>
+
+        <section class="title">
+            <div id="titlegame">PLAY TRADITIONAL GAME
+                <p>Experiance new traditional game play</p>
+                <div>
+                    <a href="/rock-paper-scissor">
+                        <button class="btn" onclick="">PLAY NOW</button>
+                    </a>
+                </div>
+            </div>
+            <div id="thestory">THE STORY
+                <img src="assets/scroll-down.svg">
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <span>What's so special ?
+                <p>THE GAMES</p>
+            </span>
+
+            <span class="slideshow-about">
+                <div class="mySlides fade">
+                    <img src="assets/rockpaperstrategy-1600.jpg"
+                            width="700px" height="400px">
+                </div>
+                <div class="mySlides fade">
+                    <img src="assets/jada-griffin.jpg" width="700px" height="400px">
+                </div>
+                <div class="mySlides fade">
+                    <img src="assets/aaron-williams.jpg" width="700px" height="400px">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)"><img src="assets/switch-left.svg" width="20px"></a>
+                <a class="next" onclick="plusSlides(1)"><img src="assets/switch-right.svg" width="18px"></a>
+                <div style="text-align: center;">
+                    <a class="dot" onclick="currentSlide(1)"></a>
+                    <a class="dot" onclick="currentSlide(2)"></a>
+                    <a class="dot" onclick="currentSlide(3)"></a>
+                </div>
+            </span>
+        </section>
+        <section id="feature" class="feature">
+            <span>
+                <p>What's so special ?</p>
+                <h1>FEATURES</h1>
+                <ul class="rb">
+                    <li>
+                        <div>
+                            <h2>TRADISONAL GAME</h2>
+                        </div>
+                        <div class="textf">
+                            <h4>if you miss ypur childhood, we provide my tradisonal game</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>GAME SUIT</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>TBD</h2>
+                    </li>
+                </ul>
+            </span>
+
+
+        </section>
+        <section id="sq" class="sq">
+            <lebel class="rtg">
+                Can My Computer Run this game ?
+            </lebel>
+            <div>
+
+                <div>
+                    <table>
+                        <h1>SYSTEM REQUIREMENTS</h1>
+                        <tr>
+                            <th class="sqfield">OS:
+                                <div id="sq-lebel">Windows 7 64-bit only
+                                    (No OSX support at this time)</div>
+                            </th>
+                            <th class="sqfield">PROCESSOR:
+                                <div id="sq-lebel">Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="sqfield">MEMORY:
+                                <div id="sq-lebel">4 GB RAM</div>
+                            </th>
+                            <th class="sqfield">STORAGE:
+                                <div id="sq-lebel">8 GB available space</div>
+                            </th>
+                        </tr>
+                        <th class="sqfield" colspan="2">GRAPHICS:
+                            <div id="sq-lebel">NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB DirectX11 (Shader
+                                Model
+                                5)</div>
+                        </th>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="topscore" class="topscore">
+            <span>
+                <h1>TOP SCORES</h1>
+                <h2>This top score from various games provided on this platform</h2>
+                <button class="btn-grup btn">see more</button>
+            </span>
+            <div class="boxtimescore">
+                <div class="timescore">
+                    <div class="timecontent1">
+                        <div class="timeprofil">
+                            <img src="assets/evan-lahti.jpg">
+                            <label class="namaprofil">Evan Lahti <a class="imgbox">......</a>
+                                <div class="lebelprofil">PC Gamer</div>
+                            </label>
+                        </div>
+                        <div>
+                            <h3>"One of my gaming hinglight of the yeard"</h3>
+                        </div>
+                        <div class="lebelprofil1">Juni 19,2021</div>
+                    </div>
+                </div>
+                <div class="timescore">
+                    <div class="timecontent2">
+                        <div class="timeprofil">
+                            <img src="assets/jada-griffin.jpg">
+                            <label class="namaprofil">Jada Griffin <a class="imgbox">......</a>
+                                <div class="lebelprofil">Nerdreactor</div>
+                            </label>
+                        </div>
+                        <div>
+                            <h3> "The next bing thing in the world of streaming and survival games"</h3>
+                        </div>
+                        <div class="lebelprofil1">July 10,2021</div>
+                    </div>
+                </div>
+                <div class="timescore">
+                    <div class="timecontent3">
+                        <div class="timeprofil">
+                            <img src="assets/aaron-williams.jpg">
+                            <label class="namaprofil">Aaron Williams Lahti<a class="imgbox3">......</a>
+                                <div class="lebelprofil">Uproxx</div>
+                            </label>
+                        </div>
+                        <div>
+                            <h3> "Snoop Dogg Playing The Wildly Entertaining 'SOS' Is Ridiculous"</h3>
+                        </div>
+                        <div class="lebelprofil1">December 24,2018</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="quotes" class="quotes">
+
+            <div>
+                <img src="assets/skull.png">
+            </div>
+            <div>
+                <div>
+                    <h3>Want to stay in touch ?</h3>
+                    <h1>NEWSLETTER SUBSCRIBE</h1>
+                    <p>in order to start receiving our news, all you hace to do is enter your email
+                        address. Everything else will be taken care og by us. We will send you emails
+                        containing information about game. we don't spam.</p>
+                    <div class="quotessubcribe">
+                        <div id="quotesboxx">Your email address
+                            <div id="emailgw">denda.ab@gmail.com </div>
+                        </div>
+                        <button class="btn-subsrib1">SUBCSRIBE NOW</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <%- include('./partials/footer'); %>

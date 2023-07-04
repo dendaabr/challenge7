@@ -1,0 +1,55 @@
+<footer class="footer">
+    <div class="footercontent">
+        <div class="footerlink">
+            <span><a href="#titlegame">home</a></span>
+            <span><a href="#about">about</a></span>
+            <span><a href="#feature">game features</a></span>
+            <span><a href="#sq">System requirements</a></span>
+            <span><a href="#quotes">quotes</a></span>
+            <span><a href="https://www.twitter.com/"><img src="assets/twitter.svg"></a></span>
+            <span><a href="https://www.facebook.com/"><img src="assets/facebook.svg"></a></span>
+            <span><a href="https://www.youtube.com/"><img src="assets/vector.svg"></a></span>
+            <span><a href="#"><img src="assets/twitch.svg"></a></span>
+
+        </div>
+    </div>
+    <div class="linefooter">
+        <div class="copyright">@2022 Your Games, Inc. All Right Reserved</div>
+        <div class="copyright">Privacy Policy | Terms of Services | Code of Conduct</div>
+    </div>
+</footer>
+</main>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+
+
+</body>
+
+
+</html>

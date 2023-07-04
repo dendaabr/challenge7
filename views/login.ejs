@@ -1,0 +1,17 @@
+<%- include('./partials/head'); %>
+    <%- include('./partials/header'); %>
+        <div class="container" style="display:flex;flex-direction: column; text-align:center;align-items: center;">
+            <%= typeof errMsg !='undefined' ? errMsg : '' %>
+                <form method="post" action="/login">
+                    <div class="formInput" style="display: flex;flex-direction: column;max-width: 500px;">
+                        Username: <br />
+                        <input type="text" name="username" placeholder="example@mail.com" />
+                        Passwprd: <br />
+                        <input type="password" name="password" placeholder="secret" />
+                        <br />
+                        <button type="submit">Login</button>
+                    </div>
+                </form>
+        </div>
+
+        <%- include('./partials/footer'); %>

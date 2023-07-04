@@ -1,0 +1,22 @@
+<%- include('./partials/head'); %>
+<%- include('./partials/header'); %>
+<%= typeof errMsg != 'undefined'? errMsg : '' %>
+<div class="container" style="display:flex;flex-direction: column; text-align:center;align-items: center;">
+<form method="post" action="/register">
+    <div class="formInput" style="display: flex;flex-direction: column;max-width: 500px;">
+    Username :<br />
+    <input type="text" name="username" placeholder="e.g: example@mail.com" />
+    <br />
+    Password :<br />
+    <input type="password" name="password" />
+    <br />
+    Confirm Password :<br />
+    <input type="password" name="confirmPassword" />
+    <br />
+    <button type="submit">Submit</button>
+    <br />
+</div>
+</form>
+</div>
+
+<%- include('./partials/footer'); %>

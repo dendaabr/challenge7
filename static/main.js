@@ -20,7 +20,7 @@ class Start {
         this.comOption = option;
     }
 
-    saveMatchResult(user_id, score) {
+    saveMatchResult(user_id, score, token) {
         fetch("http://localhost:3000/users-history", {
             method: "PUT",
             body: JSON.stringify({
@@ -28,14 +28,14 @@ class Start {
                 score
             }),
             headers: {
-                "Content-type": "application/json; charset=UTF-8"
+                "Content-type": "application/json; charset=UTF-8",
+                "Authorization": token,
             }
         });
     }
 
 
-    winResult(user_id) {
-        console.log('user_id', user_id)
+    winResult(user_id, token) {
         if (this.yourOption == "rock" && this.comOption == "paper") {
             this.wingame = this.yourname
         } else if (this.yourOption == "rock" && this.comOption == "scissors") {
@@ -60,7 +60,7 @@ class Start {
             score = -1;
         }
 
-        this.saveMatchResult(user_id, score)
+        this.saveMatchResult(user_id, score, token)
     }
 
     comProses() {
@@ -79,7 +79,7 @@ class Start {
     }
 }
 
-function optionPick(finger, user_id) {
+function optionPick(finger, user_id, token) {
     // menginisialisasi class start
     const start = new Start();
 
@@ -111,11 +111,10 @@ function optionPick(finger, user_id) {
         if (element !== selectedComOption) {
             document.getElementById(`computer_${element}`).disabled = true;
         }
-        console.log(finger);
     });
 
     // Memilih penenang game
-    start.winResult(user_id);
+    start.winResult(user_id, token);
     const outgame = document.getElementById("outgame");
     outgame.textContent = "🤔"
 
